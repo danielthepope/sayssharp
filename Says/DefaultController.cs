@@ -1,19 +1,20 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
 
-namespace SaysSharp.Controllers
+namespace Says
 {
-    public class SaysController : ApiController
+    public class DefaultController : ApiController
     {
-
         public HttpResponseMessage Get(string who, string message)
         {
             who = who.ToLower();
@@ -36,7 +37,8 @@ namespace SaysSharp.Controllers
                 new System.Drawing.PointF((float)points[6], (float)points[7])
             };
             filter.IsBilinearInterpolation = true; // optional for higher quality
-            using (Bitmap background = new Bitmap(root + "images\\"+ image)) {
+            using (Bitmap background = new Bitmap(root + "images\\" + image))
+            {
                 using (Bitmap perspectiveImg = filter.Bitmap)
                 {
                     Bitmap finalImage = Superimpose(background, perspectiveImg, points);
@@ -44,13 +46,13 @@ namespace SaysSharp.Controllers
                     // perspectiveImg contains your completed image. save the image or do whatever.
                 }
             }
-            
+
         }
 
         private Bitmap DrawText(String text, Font font, Color textColor, Color backColor, bool widescreen)
         {
             //first, create a dummy bitmap just to get a graphics object
-            Bitmap img = new Bitmap(1,1);
+            Bitmap img = new Bitmap(1, 1);
             Graphics drawing = Graphics.FromImage(img);
             int targetWidth = widescreen ? 1366 : 1024;
             int targetHeight = 768;
@@ -73,11 +75,11 @@ namespace SaysSharp.Controllers
             //create a brush for the text
             Brush textBrush = new SolidBrush(textColor);
 
-            drawing.DrawString(text, font, textBrush, 
+            drawing.DrawString(text, font, textBrush,
                 new RectangleF(
-                    (targetWidth-textSize.Width)/2.0F, 
-                    (targetHeight-textSize.Height)/2.0F, 
-                    textSize.Width, 
+                    (targetWidth - textSize.Width) / 2.0F,
+                    (targetHeight - textSize.Height) / 2.0F,
+                    textSize.Width,
                     textSize.Height
                 )
             );

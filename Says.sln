@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaysSharp", "SaysSharp\SaysSharp.csproj", "{24A54F84-B921-4A40-B6A3-C53BD64AB2C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Says", "Says\Says.csproj", "{EBEC64B5-54B7-4B9A-86F5-298FCFAD0998}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{24A54F84-B921-4A40-B6A3-C53BD64AB2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24A54F84-B921-4A40-B6A3-C53BD64AB2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24A54F84-B921-4A40-B6A3-C53BD64AB2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24A54F84-B921-4A40-B6A3-C53BD64AB2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBEC64B5-54B7-4B9A-86F5-298FCFAD0998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEC64B5-54B7-4B9A-86F5-298FCFAD0998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEC64B5-54B7-4B9A-86F5-298FCFAD0998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEC64B5-54B7-4B9A-86F5-298FCFAD0998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
