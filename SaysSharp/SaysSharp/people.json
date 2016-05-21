@@ -1,0 +1,45 @@
+{
+  "ben": {
+    "image": "ben.png",
+    "fontSize": 80,
+    "screen": [ 318, 17, 724, 20, 721, 273, 317, 274 ],
+    "textColour": [ 142, 151, 158 ],
+    "widescreen": true
+  },
+  "dan": {
+    "image": "dan.jpg",
+    "fontSize": 80,
+    "screen": [ 44, 21, 328, 188, 328, 436, 24, 402 ],
+    "textColour": [ 147, 95, 74 ],
+    "widescreen": false
+  },
+  "pete": {
+    "image": "pete.png",
+    "fontSize": 80,
+    "screen": [ 29, -11, 488, 67, 485, 358, -4, 399 ],
+    "textColour": [ 165, 165, 170 ],
+    "widescreen": false
+  },
+  "ruth": {
+    "image": "ruth.png",
+    "fontSize": 80,
+    "screen": [ 93, 74, 515, 87, 516, 313, 84, 312 ],
+    "textColour": [ 80, 83, 74 ],
+    "widescreen": true
+  },
+  "ryan": {
+    "image": "ryan.png",
+    "fontSize": 80,
+    "screen": [ 0, 36, 338, 64, 338, 294, -4, 316 ],
+    "textColour": [ 168, 183, 200 ],
+    "widescreen": false
+  },
+  "seren": {
+    "image": "seren.png",
+    "fontSize": 80,
+    "screen": [ 235, 11, 728, 5, 728, 372, 233, 355 ],
+    "textColour": [ 22, 20, 28 ],
+    "widescreen": false
+  },
+
+}
